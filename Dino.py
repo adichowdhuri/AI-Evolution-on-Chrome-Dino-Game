@@ -9,27 +9,27 @@ SCREEN_HEIGHTS = 600
 SCREEN_WIDTH = 1100
 SCREEN = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHTS))
 
-RUNNING = [pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\dino\DinoRun1.png"), 
-            pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\dino\DinoRun2.png")]
+RUNNING = [pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\DinoRun1.png"), 
+            pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\DinoRun2.png")]
 
-JUMPING = pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\dino\DinoJump.png")
-DUCKING = [pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\dino\DinoDuck1.png"), 
-            pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\dino\DinoDuck2.png")]
+JUMPING = pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\DinoJump.png")
+DUCKING = [pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\DinoDuck1.png"), 
+            pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\DinoDuck2.png")]
 
-SMALL_CACTUS = [pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\Cact\SmallCactus1.png"),
-                pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\Cact\SmallCactus2.png"),
-                pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\Cact\SmallCactus3.png")]
+SMALL_CACTUS = [pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\SmallCactus1.png"),
+                pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\SmallCactus2.png"),
+                pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\SmallCactus3.png")]
 
-LARGE_CACTUS = [pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\Cact\LargeCactus1.png"),
-                pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\Cact\LargeCactus2.png"),
-                pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\Cact\LargeCactus3.png")]
+LARGE_CACTUS = [pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\LargeCactus1.png"),
+                pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\LargeCactus2.png"),
+                pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\LargeCactus3.png")]
 
-BIRD = [pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\dino\Bird1.png"), 
-            pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\dino\Bird2.png")]
+BIRD = [pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\Bird1.png"), 
+            pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\Bird2.png")]
 
-CLOUD = pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\Cloud.png")
+CLOUD = pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\Cloud.png")
 
-BG = pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\Track.png")
+BG = pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\Track.png")
 
 class Dinosaur:
     X_POS = 80

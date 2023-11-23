@@ -13,20 +13,20 @@ SCREEN_HEIGHT = 600
 SCREEN_WIDTH = 1100
 SCREEN = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
-RUNNING = [pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\dino\DinoRun1.png"),
-           pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\dino\DinoRun2.png") ]
+RUNNING = [pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\DinoRun1.png"),
+           pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\DinoRun2.png") ]
 
-JUMPING = pygame.image.load(r'D:\Users\Biki\Google Drive\My Pictures\Dino\dino\DinoJump.png')
+JUMPING = pygame.image.load(r'AI-Evolution-on-Chrome-Dino-Game\images\DinoJump.png')
 
-SMALL_CACTUS = [pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\Cact\SmallCactus1.png"),
-                pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\Cact\SmallCactus2.png"),
-                pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\Cact\SmallCactus3.png")]
+SMALL_CACTUS = [pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\SmallCactus1.png"),
+                pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\SmallCactus2.png"),
+                pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\SmallCactus3.png")]
 
-LARGE_CACTUS = [pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\Cact\LargeCactus1.png"),
-                pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\Cact\LargeCactus2.png"),
-                pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\Cact\LargeCactus3.png")]
+LARGE_CACTUS = [pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\LargeCactus1.png"),
+                pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\LargeCactus2.png"),
+                pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\LargeCactus3.png")]
             
-BG = pygame.image.load(r"D:\Users\Biki\Google Drive\My Pictures\Dino\Track.png")
+BG = pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\Track.png")
 
 FONT = pygame.font.Font('freesansbold.ttf', 20)
 
