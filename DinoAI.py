@@ -252,9 +252,20 @@ def eval_genomes(genomes, config):
         #user_input = pygame.key.get_pressed()
 
         for i, dinosaur in enumerate(dinosaurs):
+            obstacle_type = -1  # Initialize to an invalid value
+            if isinstance(obstacle, SmallCactus):
+                obstacle_type = 0
+            elif isinstance(obstacle, LargeCactus):
+                obstacle_type = 1
+            elif isinstance(obstacle, LowBird):
+                obstacle_type = 2
+            elif isinstance(obstacle, HighBird):
+                obstacle_type = 3
+
             output = nets[i].activate((dinosaur.rect.y,
-                                       distance(dinosaur.rect.x, obstacle.rect.x),
-                                       obstacle.rect.y
+                                       obstacle.rect.x,
+                                       obstacle.rect.y,
+                                       obstacle_type
                                     ))
 
             # Decision to jump
