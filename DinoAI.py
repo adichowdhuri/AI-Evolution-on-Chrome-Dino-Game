@@ -6,7 +6,7 @@ import os
 import sys
 import random
 
-speed_shift = 0
+speed_shift = 30
 
 pygame.init()
 
@@ -183,11 +183,12 @@ def eval_genomes(genomes, config):
 
     def score():
         global points, game_speed
-        points += 5
+        points += 1
         if points % 100 == 0:
             game_speed += 1
-        text = FONT.render(f'Points:  {str(points)}', True, (0, 0, 0))
+        text = FONT.render(f'score:  {str(points)}', True, (0, 0, 0))
         SCREEN.blit(text, (950, 50))
+
 
     def statistics():
         global dinosaurs, game_speed, ge
@@ -269,7 +270,7 @@ def eval_genomes(genomes, config):
                                     ))
 
             # Decision to jump
-            if output[0] > 0.5 and dinosaur.rect.y == dinosaur.Y_POS:
+            if output[0] > 0.5 and (dinosaur.rect.y == dinosaur.Y_POS or dinosaur.rect.y == (dinosaur.Y_POS + 32)):
                 dinosaur.dino_jump = True
                 dinosaur.dino_run = False
                 dinosaur.dino_duck = False
