@@ -6,6 +6,8 @@ import os
 import sys
 import random
 
+speed_shift = 0
+
 pygame.init()
 
 #global consts
@@ -170,7 +172,7 @@ def eval_genomes(genomes, config):
 
     x_pos_bg = 0
     y_pos_bg = 380
-    game_speed = 20
+    game_speed = 20 + speed_shift
 
     for genome_id, genome in genomes:
         dinosaurs.append(Dinosaur())
