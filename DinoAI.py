@@ -25,6 +25,11 @@ SMALL_CACTUS = [pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\Smal
 LARGE_CACTUS = [pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\LargeCactus1.png"),
                 pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\LargeCactus2.png"),
                 pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\LargeCactus3.png")]
+
+BIRD = [pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\Bird1.png"), 
+            pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\Bird2.png")]
+
+CLOUD = pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\Cloud.png")
             
 BG = pygame.image.load(r"AI-Evolution-on-Chrome-Dino-Game\images\Track.png")
 
