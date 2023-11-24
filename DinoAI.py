@@ -254,7 +254,7 @@ def eval_genomes(genomes, config):
         for i, dinosaur in enumerate(dinosaurs):
             output = nets[i].activate((dinosaur.rect.y,
                                        distance(dinosaur.rect.x, obstacle.rect.x),
-                                       distance(dinosaur.rect.y, obstacle.rect.y)
+                                       obstacle.rect.y
                                     ))
 
             # Decision to jump
