@@ -43,7 +43,7 @@ FONT = pygame.font.Font('freesansbold.ttf', 20)
 class Dinosaur:
     X_POS = 80
     Y_POS = 310
-    JUMP_VEL = 8.5
+    JUMP_VEL = 8.5 
 
     def __init__(self, img = RUNNING[0]):
         self.image = img
@@ -69,7 +69,7 @@ class Dinosaur:
         self.image = JUMPING
         if self.dino_jump:
             self.rect.y -= self.jump_vel * 4
-            self.jump_vel -= 0.8
+            self.jump_vel -= 0.8 + (speed_shift / 100)
         if self.jump_vel <= -self.JUMP_VEL:
             self.dino_jump = False
             self.dino_run = True
