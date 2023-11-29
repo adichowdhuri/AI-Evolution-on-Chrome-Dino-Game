@@ -6,8 +6,7 @@ import os
 import sys
 import random
 
-speed_shift = 30
-
+speed_shift = 0
 pygame.init()
 
 #global consts
@@ -183,7 +182,7 @@ def eval_genomes(genomes, config):
 
     def score():
         global points, game_speed
-        points += 1
+        points += (1 + int(game_speed/10))
         if points % 100 == 0:
             game_speed += 1
         text = FONT.render(f'score:  {str(points)}', True, (0, 0, 0))
@@ -262,7 +261,6 @@ def eval_genomes(genomes, config):
                 obstacle_type = 2
             elif isinstance(obstacle, HighBird):
                 obstacle_type = 3
-
             output = nets[i].activate((dinosaur.rect.y,
                                        obstacle.rect.x,
                                        obstacle.rect.y,
